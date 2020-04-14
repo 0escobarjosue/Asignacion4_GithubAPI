@@ -1,0 +1,36 @@
+html,
+body {
+  height: 100%;
+  background-image: url(githubbg2.jpg);
+  background-size: center;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+}
+input{
+  width: 50%;
+}
+.container {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
+}
+
+.submitBtn{
+  margin-top: 10px;
+}
+
+td{
+  height: 100px;
+}
+
+.form-group{
+  text-align: center;
+}
