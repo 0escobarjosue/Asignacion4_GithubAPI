@@ -6,64 +6,93 @@
     <title>Github Lookup</title>
     <link rel="stylesheet" href="style.css" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
-    />
+    /> -->
   </head>
   <body>
-    <div>
+    <div class="container">
       <div class="form-group">
-      <label class="mainLbl btn btn-secondary active" for="lookUpBox">Insert the username to look for</label>
-      <input type="text" class="lookUpBox form-control" name="lookup" placeholder="John.." />
-      <button class="submitBtn btn btn-dark">Search</button>
-    </div>
-    <div container>
-      <table class="table-responsive table table-dark">
-        <tr>
-          <th><label for="imgPhoto"> Photo</label></th>
-          <th><label>Name</label></th>
-          <th><label>Number Stars</label></th>
-          <th><label>Number Repositories</label></th>
-          <th><label>Followers</label></th>
-          <th><label>Profile Link</label></th>
-        </tr>
-        <tr>
-          <td class="align-middle"><img class="imgPhoto" /></td>
-          <td class="align-middle"><label class="showName"></label></td>
-          <td class="align-middle"><label class="showNumberStars"></label></td>
-          <td class="align-middle">
-            <label class="showNumberOfRepos"></label>
-          </td>
-          <td class="align-middle"><label class="showFollowers"></label></td>
-          <td class="align-middle">
-            <label class="showLinkToProfile"></label>
-          </td>
-        </tr>
-      </table>
-      <table class="table-responsive table table-dark">
-        <tr>
-          <th><label>Followings</label></th>
-          <th><label>Company</label></th>
-          <th><label>Website</label></th>
-          <th><label>Location</label></th>
-          <th><label>Member since</label></th>
-          <th><label>Repository list:</label></th>
-        </tr>
-        <tr>
-          <td class="align-middle"><label class="showFollowings"></label></td>
-          <td class="align-middle"><label class="showCompany"></label></td>
-          <td class="align-middle"><label class="showWebsite"></label></td>
-          <td class="align-middle"><label class="showLocation"></label></td>
-          <td class="align-middle"><label class="showMemberSince"></label></td>
-          <td class="align-middle">
-            <label class="showRepositoryList"></label>
-          </td>
-        </tr>
-      </table>
-    </div>
+        <div class="formControls">
+          <div class="headerDiv">
+            <h2>Github Repository Finder</h2>
+            <img class="githubLogo" src="githubLogo.png" alt="Github" />
+          </div>
+          <form>
+            <label class="mainLbl btn btn-secondary active" for="lookUpBox"
+              >Insert the username to look for</label
+            >
+            <input
+              type="text"
+              class="lookUpBox form-control"
+              name="lookup"
+              placeholder="John.."
+            />
+            <button class="submitBtn btn btn-dark">Search</button>
+            <div class="popUp"></div>
+          </form>
+        </div>
+      </div>
+      <div class="tableContainer">
+        <table class="table">
+          <tr>
+            <th><label for="imgPhoto"> Photo</label></th>
+            <th><label>Name</label></th>
+            <th><label>Number Stars</label></th>
+            <th><label>Number Repositories</label></th>
+            <th><label>Followers</label></th>
+            <th><label>Profile Link</label></th>
+          </tr>
+          <tr>
+            <td class="align-middle"><img class="imgPhoto" /></td>
+            <td class="align-middle"><label class="showName"></label></td>
+            <td class="align-middle">
+              <label class="showNumberStars"></label>
+            </td>
+            <td class="align-middle">
+              <label class="showNumberOfRepos"></label>
+            </td>
+            <td class="align-middle"><label class="showFollowers"></label></td>
+            <td class="align-middle">
+              <label class="showLinkToProfile"></label>
+            </td>
+          </tr>
+        </table>
 
+        <div class="overflow-x:auto">
+          <table class="table">
+            <tr>
+              <th><label>Followings</label></th>
+              <th><label>Company</label></th>
+              <th><label>Website</label></th>
+              <th><label>Location</label></th>
+              <th><label>Member since</label></th>
+              <th><label>Repository list</label></th>
+            </tr>
+            <tr>
+              <td class="align-middle">
+                <label class="showFollowings"></label>
+              </td>
+              <td class="align-middle"><label class="showCompany"></label></td>
+              <td class="align-middle"><label class="showWebsite"></label></td>
+              <td class="align-middle"><label class="showLocation"></label></td>
+              <td class="align-middle">
+                <label class="showMemberSince"></label>
+              </td>
+              <td class="align-middle">
+                <label class="showRepositoryList"></label>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
